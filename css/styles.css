@@ -593,13 +593,13 @@ body {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px; /*    :)    */
 }
 
 .footer-soc-item {
@@ -631,6 +631,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -658,7 +659,7 @@ body {
 
   font-size: 16px;
   line-height: 1.88;
-
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -677,13 +678,18 @@ body {
   border-radius: 4px;
 }
 
+.join-btn:focus,
+.join-btn:hover {
+  background: var(--btn-active);
+}
+
 .footer-email-join {
-  margin-top: 10px;
   margin-left: 93px;
 }
 
 .footer-join {
   display: flex;
+  align-items: center;
 }
 
 .footer-join::placeholder {
@@ -718,7 +724,7 @@ body {
 
 .modal {
   width: 528px;
-  min-height: 581px;
+  max-height: 581px;
   background-color: var(--white-color);
   border-radius: 4px;
   padding: 40px;
@@ -749,7 +755,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16l;
+  line-height: 1.16;
 
   color: var(--text-color);
 }
